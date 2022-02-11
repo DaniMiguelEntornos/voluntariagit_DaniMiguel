@@ -6,20 +6,31 @@
 
 import java.util.regex.Pattern;
 
-public class Persona {
 
+/**
+ * @author Danim
+ *
+ */
+
+public class Persona {
+	//Atributos Privados de tipo String y Entero.
     private String dni;
     private String nombre;
     private String apellidos;
     private int edad;
 
     static final int mayoriaEdad = 18;
-
+ 
     public Persona() {
        // System.out.println("SE ESTÁ EJECUTANDO EL CONSTRUCTOR POR DEFECTO, PORQUE SI!!!!!!!");
     }
     
-    
+    /**
+     * 
+     * @param nombrePers hace referencia al atributo nombre
+     * @param apellidosPers hace referencia al atributo  apellido
+     * @param edadPers hace referencia al atributo edad
+     */
     Persona(String nombrePers, String apellidosPers, int edadPers){
         this();
         this.nombre = nombrePers;
@@ -30,7 +41,13 @@ public class Persona {
     }
     
     
-    
+    /**
+     * 
+     * @param dni hace referencia al atributo dni
+     * @param nombrePers hace referencia al atributo nombre
+     * @param apellidosPers hace referencia al atributo apellido
+     * @param edadPers hace referencia al atributo edad 
+     */
     public Persona(String dni, String nombre, String apellidos, int edad) {
         this();
         this.dni = dni;
@@ -38,39 +55,63 @@ public class Persona {
         this.apellidos = apellidos;
         this.edad = edad;
     }
-
+    /**
+     * 
+     * @return devuelve valor del dni a la clase PruebaPersona
+     */
     public String getDni() {
         return dni;
     }
-
+    /**
+     * 
+     * @param dni
+     */
     public void setDni(String dni) {
         this.dni = dni;
     }
-
+    /**
+     * 
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
-
+    /**
+     * 
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+    /**
+     * 
+     * @return
+     */
     public String getApellidos() {
         return apellidos;
     }
-
+    /**
+     * 
+     * @param apellidos
+     */
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
-
+    /**
+     * 
+     * @return
+     */
     public int getEdad() {
         return this.edad; 
     }
-
+    /**
+     * 
+     * @param edad
+     */
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
+ 
     public void updateEdad() {
         this.edad = this.edad + 1;
         
