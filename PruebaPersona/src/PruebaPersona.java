@@ -35,7 +35,9 @@ public class PruebaPersona {
              
          }*/
                   
-      
+        /**
+         * Instaciacion de 3 objetos Personas
+         */
          Persona per2 = new Persona("20222444L", "María", "Carcelén Sánchez", 67);
          Persona per3 = new Persona("José", "Serrano Márquez", 25);
          Persona per4 = new Persona("64578488K","Pedro", "De la Calle García", 55);
